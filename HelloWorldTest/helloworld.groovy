@@ -1,7 +1,7 @@
 import com.ibm.dbb.build.*
 
 hlq        = "IBMUSER.BUILD"
-sourceDir  = "/u/ibmuser/build"
+sourceDir  = "/u/ibmuser/mainframe-devops-helloworld/HelloWorldTest"
 compilerDS = "IGY630.SIGYCOMP"
 
 println("Creating ${hlq}.COBOL. . .")
@@ -18,6 +18,7 @@ createPDSCmd.create();
 println("Copying ${sourceDir}/helloworld.cbl to ${hlq}.COBOL(HELLO) . . .")
 def copy = new CopyToPDS().file(new File("${sourceDir}/helloworld.cbl")).dataset("${hlq}.COBOL").member("HELLO")
 copy.execute()
+
 
 println("Compiling ${hlq}.COBOL(HELLO). . .")
 def compile = new MVSExec().pgm("IGYCRCTL").parm("LIB")
