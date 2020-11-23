@@ -8,5 +8,4 @@
            DISPLAY "Lalit has done it".
            DISPLAY "added to test git and jenkins".
            DISPLAY "Push to Git and Trigger Jenkins".
-           DISPLAY "Line#5 added".
            STOP RUN.
