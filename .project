@@ -9,5 +9,5 @@
 	<natures>
 		<nature>com.ibm.ftt.ui.views.project.navigator.local</nature>
 		<nature>com.ibm.ftt.dbbz.integration.dbbzprojectnature</nature>
-  </natures>
+    </natures>
 </projectDescription>
