@@ -10,5 +10,5 @@
       *    DISPLAY "Line Number# 3 Added".
            DISPLAY "Line Number# 4 Added".
            DISPLAY "Test Rocket Git ASCII to EBCDIC".
-           DISPLAY "SAMPLE RUN TO TEST GIT - 555".
+           DISPLAY "SAMPLE RUN TO TEST GIT - 8".
            STOP RUN.
