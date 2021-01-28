@@ -44,11 +44,13 @@ compile.dd(new DDStatement().name("SYSPRINT").options("cyl space(5,5) unit(vio) 
 compile.copy(new CopyToHFS().ddName("SYSPRINT").file(new File("${sourceDir}/worklog/helloworld.log")))
 def rc = compile.execute()
 
-if (rc > 4)
+if (rc > 4) {
         println("******************************************")
         println("           Compile failed!  RC=$rc")
         println("******************************************")
-else
+}
+else {
         println("******************************************")
         println("        Compile successful!  RC=$rc")
         println("******************************************")
+}
