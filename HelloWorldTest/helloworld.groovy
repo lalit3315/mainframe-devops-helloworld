@@ -4,23 +4,32 @@ hlq        = "IBMUSER.BUILD"
 sourceDir  = "/S0W1/etc/dbb/jenkins/workspace/HelloGitFinal/HelloWorldTest"
 compilerDS = "IGY630.SIGYCOMP"
 
-println("**********************Creating Mainframe PDS ${hlq}.COBOL")
+println("******************************************")
+println("Creating Mainframe PDS ${hlq}.COBOL")
+println("******************************************")
 CreatePDS createPDSCmd = new CreatePDS();
 createPDSCmd.setDataset("${hlq}.COBOL");
 createPDSCmd.setOptions("tracks space(1,1) lrecl(80) dsorg(PO) recfm(F,B) dsntype(library)");
 createPDSCmd.create();
 
-println("**********************Creating Mainframe PDS ${hlq}.OBJ")
+println("******************************************")
+println("Creating Mainframe PDS ${hlq}.OBJ")
+println("******************************************")
 createPDSCmd.setDataset("${hlq}.OBJ");
 createPDSCmd.setOptions("tracks space(1,1) lrecl(80) dsorg(PO) recfm(F,B) dsntype(library)");
 createPDSCmd.create();
 
-println("**********************Copying ${sourceDir}/helloworld.cbl to ${hlq}.COBOL(HELLO)")
+println("******************************************")
+println("Copying ${sourceDir}/helloworld.cbl")
+println("                                TO")
+println("        ${hlq}.COBOL(HELLO)")
+println("******************************************")
 def copy = new CopyToPDS().file(new File("${sourceDir}/helloworld.cbl")).dataset("${hlq}.COBOL").member("HELLO")
 copy.execute()
 
-
-println("**********************Compiling ${hlq}.COBOL(HELLO)")
+println("******************************************")
+println("Compiling ${hlq}.COBOL(HELLO)")
+println("******************************************")
 def compile = new MVSExec().pgm("IGYCRCTL").parm("LIB")
 compile.dd(new DDStatement().name("SYSIN").dsn("${hlq}.COBOL(HELLO)").options("shr"))
 compile.dd(new DDStatement().name("SYSLIN").dsn("${hlq}.OBJ(HELLO)").options("shr"))
@@ -36,6 +45,10 @@ compile.copy(new CopyToHFS().ddName("SYSPRINT").file(new File("${sourceDir}/work
 def rc = compile.execute()
 
 if (rc > 4)
-    println("**********************Compile failed!  RC=$rc")
+        println("******************************************")
+        println("           Compile failed!  RC=$rc")
+        println("******************************************")
 else
-    println("**********************Compile successful!  RC=$rc")
+        println("******************************************")
+        println("        Compile successful!  RC=$rc")
+        println("******************************************")
