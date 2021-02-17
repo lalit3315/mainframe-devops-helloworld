@@ -11,5 +11,5 @@
            DISPLAY "Line Number# 4 Added".
            DISPLAY "Test Rocket Git ASCII to EBCDIC".
            DISPLAY "Test run before demo v0.1".
-           DISPLAY "Test run during demo 0.5".
+           DISPLAY "Test run during demo 0.8".
            STOP RUN.
