@@ -12,4 +12,6 @@
            DISPLAY "Test Rocket Git ASCII to EBCDIC".
            DISPLAY "Test run before demo v0.1".
            DISPLAY "Test run during demo 0.8".
+      * Aradhya Mehra Change
+           DISPLAY "TEST RUN DURING DEMO 0.9".     
            STOP RUN.
