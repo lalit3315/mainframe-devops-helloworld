@@ -15,4 +15,6 @@
            DISPLAY "Test run during demo 0.8".
       *CH2103 comment out demo v0.2
            DISPLAY "TEST RUN Before DEMO 0.2".
+      *CH2104 comment out demo v0.3
+           DISPLAY "Test Run Added for Version 0.3".           
            STOP RUN.
