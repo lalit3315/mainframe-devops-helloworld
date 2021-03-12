@@ -10,9 +10,9 @@
       *    DISPLAY "Line Number# 3 Added".
            DISPLAY "Line Number# 4 Added".
            DISPLAY "Test Rocket Git ASCII to EBCDIC".
-      *CH2021 comment out demo v0.1     
+      *CH102 comment out demo v0.1
       *     DISPLAY "Test run before demo v0.1".
            DISPLAY "Test run during demo 0.8".
-      * Aradhya Mehra Change 
-           DISPLAY "TEST RUN DURING DEMO 0.9".     
+      *CH2103 comment out demo v0.2
+           DISPLAY "TEST RUN Before DEMO 0.2".
            STOP RUN.
