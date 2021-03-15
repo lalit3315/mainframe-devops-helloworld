@@ -7,6 +7,7 @@
            DISPLAY "Lalit Kapila testing in progress".
            DISPLAY "Hello world!".
            DISPLAY "Lalit has done it".
+           DISPLAY "Lalit added this line -- git concu".
       *CH101 below line 3 commented
       *    DISPLAY "Line Number# 3 Added".
            DISPLAY "Line Number# 4 Added".
@@ -16,4 +17,6 @@
            DISPLAY "Test run during demo 0.8".
       *CH2103 comment out demo v0.2
            DISPLAY "TEST RUN Before DEMO 0.2".
+      *CH2104 comment out demo v0.3
+           DISPLAY "ARADHYA MEHRA CHANGES DONE ON 15-03-2021 FOR V0.3".
            STOP RUN.
