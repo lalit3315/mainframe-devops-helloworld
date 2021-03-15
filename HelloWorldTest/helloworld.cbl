@@ -4,6 +4,7 @@
       *DBB working
       *compile COBOL program using DBB, Git and jenkins
        PROCEDURE DIVISION.
+           DISPLAY "Lalit Kapila testing in progress".
            DISPLAY "Hello world!".
            DISPLAY "Lalit has done it".
       *CH101 below line 3 commented
