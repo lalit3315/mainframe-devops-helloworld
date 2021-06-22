@@ -11,5 +11,14 @@
            DISPLAY "Line Number# 4 Added".
            DISPLAY "Test Rocket Git ASCII to EBCDIC".
       *CH102 comment live demo v0.1
+
+      *CH105 Changes Start
+           DISPLAY "Demo Line Number# 1 Added".
+           DISPLAY "Demo Line Number# 2 Added".
+           DISPLAY "Demo Line Number# 3 Added".
+           DISPLAY "Demo Line Number# 4 Added".
+           DISPLAY "Demo Line Number# 5 Added".
+      *CH105 Changes End
+
            DISPLAY "Test run before DEMO on 22nd June".
            STOP RUN.
